@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-image: url(/images/bg-bottom.svg), url(/images/bg-top.svg);
+  background-color: hsl(240, 78%, 98%);
+  background-position: left bottom, top right;
+  background-repeat: no-repeat ;
+  min-height: 100vh;
+}
+/* typograhy */
+.text-xl{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+.text-l{
+    font-size: 32px;
+    letter-spacing: 1.5px;
+}
+.text-md{
+    font-size: 15;
+    letter-spacing: 1.5px;
+}
+.text-sm{
+    font-size: small;
+    letter-spacing: 1.5px;
+}
+
+/* colors */
+/* -Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%) ###Neutral .very-light-grayish-blue {
+  color: hsl(240, 78%, 98%);
+} */
+.very-light-grayish-blue{
+    color:hsl(240, 78%, 98%) ;
+} 
+.light-grayish-blue {
+  color: hsl(234, 14%, 74%);
+}
+.grayish-blue {
+  color: hsl(233, 13%, 49%);
+}
+.dark-grayish-blue {
+  color: hsl(232, 13%, 33%);
+}
+
+h1 {
+  text-align: center;
+  margin: 30px auto;
+}
+.subscription-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  
+}
+
+.switch{
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+   background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   border-radius: 35px;
+}
+.switch input{
+    opacity: 0;
+}
+.slider{
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.slider:hover{
+    background-color: hsl(236, 72%, 79%);
+    border-radius: 35px;
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    bottom: 4px;
+    left: 4px;
+    transition: all .4s ease-in-out;
+}
+input:checked+ .slider::before{
+    transform: translateX(26px);
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    text-align: center;
+    color: hsl(233, 13%, 49%);
+  }
+  .pricing-box {
+      border-radius: 12px;
+      background-color:hsl(240, 78%, 98%) ;
+      margin-top: 30px;
+      padding: 50px 40px;
+      /* text-align: center; */
+  }
+  .price-annually{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    color: hsl(233, 13%, 49%);
+  }
+  ul li{
+    color: hsl(233, 13%, 49%);
+    border-bottom: 1px solid hsl(233, 13%, 49%);
+    padding: 18px 0;
+  }
+  ul li:first-child{
+    border-top: 1px solid hsl(233, 13%, 49%);
+
+  }
