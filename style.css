@@ -127,7 +127,7 @@ input:checked + .slider::before {
   justify-content: center;
 }
 .price-annually{
-  display: none;
+  display: flex;
 }
 .price-monthly {
   align-items: center;
@@ -137,7 +137,7 @@ input:checked + .slider::before {
   font-size: 32px;
 }
 .price-monthly{
-  display: flex;
+  display: none;
 }
 .price{
   font-size: 62px;
